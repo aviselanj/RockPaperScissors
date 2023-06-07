@@ -14,6 +14,12 @@ let result = '';
 let computerPoints = 0;
 let playerPoints = 0;
 // When user clicks on button, button id is display under user choice display 
+let promp = prompt("Choose rock paper or scissors");
+if (promp === "rock") {
+    alert("Wow, good choice!")
+}
+
+promp;
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener("click", (e) => {
     userChoice = e.target.id;
     userChoiceDisplay.innerHTML = userChoice;
