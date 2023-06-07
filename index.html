@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>
+        Rock Paper Scissors
+    </title>
 </head>
 
 <body>
-    <img src="https://images.unsplash.com/photo-1522032662723-6649e699785f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cm9jayUyMHBhcGVyJTIwc2Npc3NvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-        alt="two teenage boys playing rock paper scissors">
-    <h1>Rock Paper Scissors</h1>
-    <p>
-        directions
-    </p>
+    <h2 id="output">FIRST TO GET 5 POINTS WINS $5,000, LOSER PAYS $5000!</h2>
+    <h2>Competitor Choice: <span id="computer-choice"></span></h2>
+    <h2>Your Choice: <span id="user-choice"></span></h2>
+    <h2>Result: <span id="result"></span></h2>
+    <h3>your points: <span id="player-points"></span></h3>
+    <h3>competitor points: <span id="computer-points"></span></h3>
+
     <div>
-        Player 1
+        <button class="choices" id="Rock">rock</button>
+        <button class="choices" id="Paper">paper</button>
+        <button class="choices" id="Scissors">scissors</button>
     </div>
-    <div>
-        Player 2
-    </div>
-    <div id="game-choices">
-        <ul>
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissorsk</li>
-        </ul>
-        <button>Enter</button>
-    </div>
+    <h1><span id="winner"></span></h1>
+    <script src="rps.js" charset="utf-8"></script>
 </body>
 
 </html>
