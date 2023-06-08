@@ -1,7 +1,7 @@
 // Name and target button elements
 const output = document.getElementById("output");
 const computerChoiceDisplay = document.getElementById("computer-choice");
-const userChoiceDisplay = document.getElementById("user-choice");
+const ax1 = document.getElementById("user-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
 const playerPointsPara = document.getElementById("player-points");
@@ -15,8 +15,12 @@ let computerPoints = 0;
 let playerPoints = 0;
 // When user clicks on button, button id is display under user choice display 
 let promp = prompt("Choose rock paper or scissors");
-if (promp === "rock") {
-    alert("Wow, good choice!")
+if (promp == "rock") {
+    alert("Wow, good choice! You rock!")
+} if (promp == 'scissors') {
+    alert("Cut up the competition!")
+} if (promp == "paper") {
+    alert("You are a paper chaser!")
 }
 
 promp;
