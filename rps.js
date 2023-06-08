@@ -1,7 +1,7 @@
 // Name and target button elements
 const output = document.getElementById("output");
 const computerChoiceDisplay = document.getElementById("computer-choice");
-const ax1 = document.getElementById("user-choice");
+const userChoiceDisplay = document.getElementById("user-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
 const playerPointsPara = document.getElementById("player-points");
